@@ -85,23 +85,13 @@ export default function Home() {
         </div>
       )}
       
-      {project.image.type === 'file' ? (
-        <Image
-          src={project.image.path}
-          alt={`Screenshot of ${project.status === 'coming_soon' ? 'upcoming game' : 'the game'} '${project.title}'`}
-          width={300}
-          height={200}
-          className={`w-full h-48 object-cover rounded-lg mb-4 ${project.status === 'coming_soon' ? 'filter brightness-75' : ''}`}
-        />
-      ) : (
-        <img
-          src={project.image.path}
-          alt={`Screenshot of ${project.status === 'coming_soon' ? 'upcoming game' : 'the game'} '${project.title}'`}
-          className={`w-full h-48 object-cover rounded-lg mb-4 ${project.status === 'coming_soon' ? 'filter brightness-75' : ''}`}
-          width="300"
-          height="200"
-        />
-      )}
+      <Image
+        src={project.image.path}
+        alt={`Screenshot of ${project.status === 'coming_soon' ? 'upcoming game' : 'the game'} '${project.title}'`}
+        width={300}
+        height={200}
+        className={`w-full h-48 object-cover rounded-lg mb-4 ${project.status === 'coming_soon' ? 'filter brightness-75' : ''}`}
+      />
       
       <h3 className="text-xl font-bold mb-2">
         {(project.status === 'released' && project.link) || (project.status === 'demo' && project.demoLink) ? (
@@ -248,23 +238,25 @@ export default function Home() {
 
         <section className="my-12 text-center slide-up" id="about">
           <div className="relative">
-            <img
+            <Image
               src="/banner.png"
-              alt="Synergy Circle Banner"
+              alt="Synnergy Circle Banner"
+              width={1200}
+              height={256}
               className="w-full h-64 object-cover rounded-lg mb-4"
-              width="1200"
-              height="256"
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="relative group">
-                <img
+                <Image
                   src="/kyrodev.png"
                   alt="Kyrodev Icon"
+                  width={256}
+                  height={256}
                   className="h-full w-auto object-contain py-4"
                   style={{ maxHeight: "256px" }}
                 />
                 <div className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 -bottom-10 left-1/2 transform -translate-x-1/2 bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-lg text-sm whitespace-nowrap">
-                  Leonardo Prado Cosenza "Kyrodevs"
+                  Leonardo Prado Cosenza &ldquo;Kyrodevs&rdquo;
                 </div>
               </div>
             </div>
@@ -282,7 +274,7 @@ export default function Home() {
             <div className="bg-white dark:bg-gray-800 shadow rounded-lg p-4 transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
               <i className="fas fa-gamepad text-3xl mb-4 transition-colors duration-300 group-hover:text-blue-500"></i>
               <p className="mb-4">
-                Synnergy Circle Games was created by Leonardo Prado Cosenza "Kyrodevs" in 2016. In 2017, we released our first commercial game called Alpacapaca Dash on Steam. 
+                Synnergy Circle Games was created by Leonardo Prado Cosenza &ldquo;Kyrodevs&rdquo; in 2016. In 2017, we released our first commercial game called Alpacapaca Dash on Steam. 
                 Throughout the years we focused on releasing more polished games, with better coding, art and marketing, 
                 with the goal to one day become a reliable publisher, focusing on making Brazilian games shine. 
                 Brazil has a lot of game enthusiasts and aspiring game developers and we know a lot of amazing games 

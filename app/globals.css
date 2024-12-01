@@ -2,20 +2,113 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(2em) scale(0.8);
+  animation: textRise 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes textRise {
+  0% {
+    opacity: 0;
+    transform: translateY(2em) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
 
+.char:nth-child(2n) {
+  animation-delay: 0.1s;
+}
+
+.char:nth-child(3n) {
+  animation-delay: 0.2s;
+}
+
+.char:nth-child(4n) {
+  animation-delay: 0.3s;
+}
+
+.char:nth-child(5n) {
+  animation-delay: 0.4s;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.slide-up {
+  animation: slideUp 1s ease-in-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.welcome-animation {
+  animation: welcomeAnim 2s ease-in-out;
+}
+
+@keyframes welcomeAnim {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.875rem;
+  white-space: nowrap;
+}
+
+.dark .tooltip .tooltiptext {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-200;
 }
