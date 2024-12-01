@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   title: "Synnergy Circle Games",
   description: "Official website of Synnergy Circle Games - Creating immersive and engaging games for various platforms.",
   keywords: "games, game development, indie games, steam games, xbox games, nintendo games",
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
   openGraph: {
     title: "Synnergy Circle Games",
     description: "Creating immersive and engaging games for various platforms",
@@ -32,17 +37,6 @@ export default function RootLayout({
           integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                document.documentElement.classList.add('dark')
-              } else {
-                document.documentElement.classList.remove('dark')
-              }
-            `,
-          }}
         />
       </head>
       <body className={inter.className}>{children}</body>

@@ -157,3 +157,11 @@ export const projects: Project[] = [
     releaseDate: "2024"
   }
 ]; 
+
+export const metadata = {
+  title: "Synnergy Circle Games",
+  description: "Synnergy Circle Games official page",
+  icons: {
+    icon: '/favicon.png',
+  },
+}; 
