@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Synnergy Circle Games Website Redesign
 
-## Getting Started
+## About This Project
 
-First, run the development server:
+This is a modern redesign of the Synnergy Circle Games website, originally created for Kyrodev (Leonardo Prado Cosenza). The previous WordPress site was redesigned into a fast, responsive, and user-friendly Next.js application.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Key Features
+
+- 🎮 Dynamic game portfolio with status indicators (Released/Demo/Coming Soon)
+- 🌓 Dark/Light mode support
+- 🔍 Real-time game search functionality
+- 📱 Fully responsive design
+- ⚡ Fast loading and optimized performance
+- 🎨 Modern UI with smooth animations
+
+### Technical Stack
+
+- **Framework**: Next.js 14
+- **Styling**: Tailwind CSS
+- **Icons**: Font Awesome
+- **Animations**: Custom CSS animations
+- **Image Optimization**: Next.js Image component
+- **TypeScript**: For type safety and better development experience
+
+### Project Structure
+
+```
+synergy/
+├── app/
+│   ├── data/
+│   │   └── projects.ts    # Game portfolio data
+│   ├── layout.tsx         # Main layout component
+│   └── page.tsx          # Main page component
+├── public/               # Static assets (images, icons)
+└── tailwind.config.ts   # Tailwind configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Game Portfolio**
+   - Easy-to-update game listing
+   - Support for multiple platforms (Steam, Xbox, Nintendo)
+   - Status indicators for game development stage
+   - Search functionality for games
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Modern Design**
+   - Clean and professional layout
+   - Smooth animations and transitions
+   - Consistent branding
+   - Improved user experience
 
-## Learn More
+3. **Social Integration**
+   - Direct links to social media
+   - Steam store integration
+   - Ko-fi support button
+   - Discord community link
 
-To learn more about Next.js, take a look at the following resources:
+## Why This Redesign?
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The original WordPress site had limitations in terms of performance, user experience, and maintainability. This Next.js version offers:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Better Performance**: Faster loading times and smoother interactions
+- **Easier Maintenance**: Structured code and simple content updates
+- **Modern Features**: Real-time search, dark mode, and responsive design
+- **Improved SEO**: Better meta tags and semantic HTML
+- **Better User Experience**: Intuitive navigation and clean design
 
-## Deploy on Vercel
+## Development
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To run this project locally:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+# Clone the repository
+git clone [repository-url]
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+```
+
+## Credits
+
+Developed by [Klee](https://github.com/kleeedolinux/) for Synnergy Circle Games.
+
+## License
+
+This project is proprietary and belongs to Synnergy Circle Games. All rights reserved.
