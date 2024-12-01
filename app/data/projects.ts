@@ -141,8 +141,7 @@ export const projects: Project[] = [
     link: "https://store.steampowered.com/app/1474050/Spellthief_Erinn/",
     description: "Spellthief Erinn is a 2D Puzzle Platformer where you take control of the enemies magic attacks and use them to your advantage. Solve the mysteries, explore the environment and reach the chest with a hidden spell. Find, steal and collect them all!",
     status: "demo",
-    demoLink: "https://store.steampowered.com/app/1474050/Spellthief_Erinn/",
-    releaseDate: "2025"
+    demoLink: "https://store.steampowered.com/app/1474050/Spellthief_Erinn/"
   },
   // Coming Soon
   {
@@ -153,8 +152,7 @@ export const projects: Project[] = [
     },
     platforms: ["steam"],
     description: "Magical Girl Dash 2 - Triple Prisma Attack is the second game of the Magical Girl Dash Series. Protect the streets of the city and fight against evil creatures causing chaos. Choose between three different magical girls, each with their own playstyle, and increase the Public Safety of the city.",
-    status: "coming_soon",
-    releaseDate: "2024"
+    status: "coming_soon"
   }
 ]; 
 
