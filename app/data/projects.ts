@@ -106,6 +106,7 @@ export const projects: Project[] = [
     },
     platforms: ["steam", "xbox"],
     description: "Defeat hordes of dragons and wyverns using your outstanding elvish archery skills. Create the most insane combination of upgrades and get your name into the leaderboards, showcasing all your might and glory!",
+    link: "https://store.steampowered.com/app/2785750/Arrowstorm_Ascendant/",    
     status: "released"
   },
   {
